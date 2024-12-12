@@ -1,0 +1,773 @@
+/* Déclaration des variables  */
+:root {
+  --primary-color: #fff;
+  --primary-subtle: #ddd;
+  --secondary-color: #a9a9a9;
+  --accent-color: #0047ab;
+  --primary-text-color: #121212;
+  --text-muted: #555;
+  --info-color: #e7f3ff;
+  --disabled-color: #ccc;
+  --footer-primary-text-color: #f3f3f3;
+  --footer-secondary-text-color: #a9a9a9;
+}
+
+/* Utiliser box-sizing: border-box pour tous les éléments */
+* {
+  box-sizing: border-box;
+}
+
+/* Styles globaux pour le corps et le html */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Styles pour les titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* Style spécifique pour h2 */
+h2 {
+  font-size: 2em;
+}
+
+/* Style pour les citations */
+blockquote {
+  background-color: var(--info-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--accent-color);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Style pour les citations */
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+/* Style pour les figures */
+figure {
+  margin: 1em;
+}
+
+/* Style pour les légendes des figures */
+figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-align: start;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Ajout d'une icône avant les légendes des figures */
+figcaption::before {
+  content: "➤ ";
+  color: var(--accent-color);
+}
+
+/* Transition d'opacité pour les liens et boutons */
+a,
+button {
+  transition: opacity 0.3s ease;
+}
+
+/* Opacité au survol des liens */
+a:hover {
+  opacity: 0.9;
+}
+
+/* Style pour l'icône de fermeture */
+.fa-x {
+  font-weight: 10;
+}
+
+/* Opacité au survol du bouton "Lire la suite" */
+.read-more-btn:hover {
+  opacity: 0.8;
+}
+
+/* Alignement du texte au centre */
+.text-center {
+  text-align: center !important;
+}
+
+/* Justification du texte */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Transformation du texte en majuscules */
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+/* Texte en gras */
+.bold {
+  font-weight: 600;
+}
+
+/* Couleur du texte principal dans le pied de page */
+.footer-primary {
+  color: var(--footer-primary-text-color) !important;
+}
+
+/* Couleur du texte secondaire dans le pied de page */
+.footer-secondary,
+.footer-secondary > a {
+  color: var(--footer-secondary-text-color) !important;
+}
+
+/* Couleur du texte principal */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Couleur du texte secondaire */
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Style pour le bouton principal */
+.btn-primary {
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Style pour le bouton principal au focus */
+.btn-primary:focus-visible {
+  outline: 3px solid var(--primary-text-color);
+  border-radius: 8px;
+}
+
+/* Désactivation du défilement */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Style pour l'en-tête */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Style pour les liens de navigation */
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+/* Style pour les liens de navigation au survol */
+.nav-link:not(.logo):hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Style pour la navigation interne */
+.nav-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--primary-text-color);
+  background-color: var(--primary-color);
+}
+
+/* Style pour le logo */
+.logo {
+  margin-right: 10px;
+}
+
+/* Style pour la barre de navigation large */
+#navbar-lg {
+  /* width: 100%; */
+  display: none;
+}
+
+/* Style pour les liens du logo et du menu latéral */
+.logo a,
+.sidebar-menu-nav a {
+  font-family: Oxanium, sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  width: fit-content;
+}
+
+/* Style pour les liens de la newsletter */
+.newsletter a {
+  color: var(--primary-text-color);
+}
+
+/* Style pour les liens de la newsletter au survol */
+.newsletter a:hover {
+  color: var(--accent-color);
+}
+
+/* Style pour les liens de la barre de navigation large */
+#navbar-lg a {
+  margin: 0 10px;
+  height: 100%;
+  font-size: 1em;
+  font-family: Oxanium, sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+/* Style pour l'icône du menu hamburger */
+.hamburger-menu i {
+  font-size: 1.5em;
+  line-height: 0;
+  width: 32px;
+}
+
+/* Style pour le menu latéral */
+#sidebar-menu {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 90%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: -1;
+}
+
+/* Style pour le pseudo-élément avant le menu latéral */
+#sidebar-menu::before {
+  content: "";
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+/* Style pour le menu latéral ouvert */
+#sidebar-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Style pour la navigation du menu latéral */
+.sidebar-menu-nav {
+  width: 100%;
+  font-family: Oxanium, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style pour les icônes des réseaux sociaux dans le menu latéral et le pied de page */
+.sidebar-social-media,
+.footer-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-size: 2em;
+}
+
+/* Style pour le conteneur de titre de section */
+.section-title-container {
+  width: 100%;
+  border-top: 5px solid var(--accent-color);
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+/* Style pour le titre de section */
+.section-title {
+  width: fit-content;
+  margin: 0;
+  margin-left: auto;
+  padding: 0.5em 3em 0.5em 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Style pour la section des articles */
+.articles-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style pour les articles cliquables */
+.clickable-article {
+  all: unset;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Style pour les articles cliquables au focus */
+.clickable-article:focus-visible {
+  outline: 3px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+/* Style pour la carte d'article */
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  border-bottom: 2px solid var(--primary-text-color);
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+/* Style pour les images dans la carte d'article */
+.article-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Style pour l'auteur de l'article */
+.article-author {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.5rem 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Ajout d'une icône avant l'auteur de l'article */
+.article-author::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  margin-right: 0.3em;
+  color: var(--accent-color);
+  font-style: normal;
+}
+
+/* Style pour le corps de la carte d'article */
+.article-card-body {
+  padding: 3px;
+}
+
+/* Style pour les listes dans le corps de la carte d'article */
+.article-card-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Style pour les éléments de liste dans le corps de la carte d'article */
+.article-card-body li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Ajout d'une icône avant les éléments de liste dans le corps de la carte d'article */
+.article-card-body li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Style pour le titre de l'article */
+.article-title {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Style pour le titre de l'article au survol */
+.article-title:hover {
+  text-decoration: underline;
+}
+
+/* Style pour la newsletter */
+.newsletter {
+  padding: 20px;
+}
+
+/* Style pour les étiquettes de la newsletter */
+.newsletter label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Style pour l'input de la newsletter */
+.newsletter #newsletter-subscription {
+  width: 100%;
+  font-size: 1em;
+  padding: 0.9em;
+  border: 3px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* Style pour le bouton de la newsletter */
+.newsletter .btn-primary {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Style pour les contrôles de pagination */
+#pagination-controls {
+  grid-column: 1 / 3;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style pour les numéros de pagination */
+#pagination-controls .pagination-number {
+  text-align: center;
+  font-size: 2.5em;
+  background-color: transparent;
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 4em;
+  height: 60px;
+  margin: 0 10px;
+}
+
+/* Style pour les numéros de pagination au survol et actifs */
+#pagination-controls .pagination-number:hover,
+#pagination-controls .pagination-number.active {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Styles pour la page des événements */
+
+/* Style pour le titre de section de la page des événements */
+.events-page .section-title {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: start;
+  padding: 0.5em 1em 0.5em 4em;
+}
+
+/* Style pour la section des événements */
+.events-page .events-section {
+  padding: 20px 0;
+}
+
+/* Style pour la carte d'événement */
+.events-page .event-card {
+  padding: 0;
+}
+
+/* Style pour l'image et la date de l'événement */
+.events-page .event-card .image-and-date {
+  position: relative;
+  height: 300px;
+}
+
+/* Style pour l'image de l'événement */
+.events-page .event-card .image-and-date img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Style pour la carte de date de l'événement */
+.events-page .event-card .image-and-date .event-date-card {
+  text-align: justify;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+}
+
+/* Style pour le mois de l'événement */
+.events-page .event-card .image-and-date .event-date-card .month {
+  color: var(--accent-color);
+}
+
+/* Style pour le corps de la carte d'événement */
+.events-page .event-card .event-card-body {
+  padding: 0;
+}
+
+/* Style pour le titre de l'événement */
+.events-page .event-card .event-card-body .event-title {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 0.2em 0;
+}
+
+/* Style pour les informations de l'événement */
+.events-page .event-card .event-card-body .event-info {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+/* Style pour la description de l'événement */
+.events-page .event-card .event-card-body .event-description {
+  padding: 10px 20px;
+  font-size: 1.3em;
+  min-height: 200px;
+}
+
+/* Style pour le conteneur de bouton de l'événement */
+.events-page .event-card .event-card-body .btn-container {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* Style pour le bouton "Lire la suite" de l'événement */
+.events-page .event-card .event-card-body .btn-container .read-more-btn {
+  width: 100%;
+}
+
+/* Styles pour l'article 3 */
+
+/* Style pour les caractéristiques du produit */
+.product-features {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--info-color);
+  border-radius: 8px;
+}
+
+/* Style pour le titre des caractéristiques du produit */
+.product-features h3 {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* Style pour la liste des caractéristiques du produit */
+.product-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style pour les éléments de la liste des caractéristiques du produit */
+.product-features li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Style pour le pied de page */
+footer {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: var(--primary-text-color);
+  letter-spacing: 0.1em;
+}
+
+/* Style pour le logo dans le pied de page */
+footer .logo {
+  width: 100%;
+}
+
+/* Style pour la section "À propos" dans le pied de page */
+footer .about {
+  padding: 20px 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Style pour les paragraphes dans le pied de page */
+footer p {
+  margin: 0;
+}
+
+/* Style pour les paragraphes dans la section "À propos" du pied de page */
+footer .about p {
+  padding: 0 20px;
+}
+
+/* Style pour les liens légaux dans le pied de page */
+footer .legal-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  font-weight: 600;
+}
+
+/* Style pour l'auteur du design dans le pied de page */
+footer .design-author {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+
+/* Style pour les liens de l'auteur du design dans le pied de page */
+footer .design-author .design-author-links {
+  justify-content: center;
+}
+
+/* Styles pour les écrans de largeur >= 600px */
+@media (width >= 600px) {
+  /* Affichage de la barre de navigation large */
+  #navbar-lg {
+    display: block;
+  }
+
+  /* Masquage de l'icône du menu hamburger */
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Masquage du menu latéral */
+  #sidebar-menu {
+    display: none;
+  }
+
+  /* Style pour la section des articles en mode grille */
+  .articles-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    padding: 0 10px;
+  }
+
+  /* Style pour les articles cliquables en mode colonne */
+  .clickable-article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Style pour la carte d'article en mode colonne */
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    border: 1px solid var(--primary-subtle);
+  }
+
+  /* Style pour le corps de la carte d'article en mode colonne */
+  .article-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style pour la description de l'article en mode colonne */
+  .article-description {
+    flex-grow: 1;
+  }
+
+  /* Style pour les images dans la carte d'article */
+  .article-card img {
+    height: 400px;
+  }
+
+  /* Style pour la section des événements en mode colonne */
+  .events-page .events-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 4em;
+  }
+
+  /* Style pour l'image et la date de l'événement en mode colonne */
+  .events-page .event-card .image-and-date {
+    width: 100%;
+    height: 900px;
+  }
+
+  /* Style pour le titre de l'événement en mode colonne */
+  .events-page .event-card .event-card-body .event-title {
+    font-size: 1.7em;
+  }
+
+  /* Style pour la description de l'événement en mode colonne */
+  .events-page .event-card .event-card-body .event-description {
+    padding: 10px 20px;
+    font-size: 2em;
+  }
+
+  /* Style pour le bouton "Lire la suite" de l'événement en mode colonne */
+  .events-page .event-card .event-card-body .btn-container .read-more-btn {
+    font-size: 1.3em;
+  }
+
+  /* Style pour la section d'un article unique en mode flex */
+  .single-article-page .single-article-section {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Style pour la carte d'un article unique en mode flex */
+  .single-article-page .single-article-section .article-card {
+    width: 90%;
+    height: 100%;
+  }
+
+  /* Style pour les étiquettes de la newsletter en mode colonne */
+  .newsletter label {
+    font-size: 1.3em;
+  }
+
+  /* Style pour la section "À propos" dans le pied de page en mode colonne */
+  footer .about {
+    width: 50%;
+  }
+}

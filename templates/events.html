@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Configuration des métadonnées de base pour la page web -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Balises SEO pour améliorer le référencement et la visibilité -->
+    <meta
+      name="description"
+      content="Branché est un magazine technologique interactif qui vous informe des dernières tendances technologiques et des événements locaux. Restez à jour avec des articles de qualité et des événements à ne pas manquer."
+    />
+    <meta
+      name="keywords"
+      content="magazine technologique, actualités tech, événements tech, innovation, technologie, articles tech, événement tech, tendances numériques"
+    />
+
+    <!-- Configuration des favicons pour différents supports et navigateurs -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/icons/site.webmanifest" />
+
+    <!-- Préchargement et importation des polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importation des icônes Font Awesome via un CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Feuille de style personnalisée pour le design du site -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Titre de la page, optimisé pour le SEO -->
+    <title>Evénements | Branché</title>
+  </head>
+  <body class="events-page">
+    <!-- En-tête de la page avec navigation principale -->
+    <header>
+      <nav id="navbar">
+        <!-- Conteneur interne de la barre de navigation -->
+        <div class="nav-inner">
+          <!-- Logo du site avec lien vers la page d'accueil -->
+          <div class="logo uppercase">
+            <a
+              href="../index.html"
+              aria-label="Lien vers la page principale"
+              class="nav-link"
+              >Branché</a
+            >
+          </div>
+
+          <!-- Navigation pour les écrans larges -->
+          <div id="navbar-lg">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="../templates/events.html" class="nav-link">Evénements</a>
+          </div>
+
+          <!-- Bouton hamburger pour menu mobile -->
+          <div class="hamburger-menu">
+            <a
+              href="#"
+              class="nav-link"
+              id="hamburger-menu-btn"
+              aria-label="Ouvrir le menu mobile"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Menu latéral (sidebar) pour mobile -->
+        <div id="sidebar-menu">
+          <!-- Navigation dans le menu latéral -->
+          <div class="sidebar-menu-nav">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="../templates/events.html" class="nav-link">Evénements</a>
+          </div>
+
+          <!-- Liens vers les réseaux sociaux dans le menu latéral -->
+          <div class="sidebar-social-media">
+            <a href="#" class="nav-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="Twitter ou X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+      <!-- Conteneur pour le titre principal de la section -->
+      <div class="section-title-container">
+        <h1 class="section-title">Agenda Tech</h1>
+      </div>
+
+      <!-- Section listant les événements à venir -->
+      <section class="articles-section events-section">
+        <!-- Carte d'événement : Salon Techno-Basque -->
+        <article class="article-card event-card">
+          <div class="image-and-date">
+            <!-- Image représentative de l'événement -->
+            <img
+              src="../assets/img/event-1.webp"
+              alt="Présentation d'innovations technologiques au Salon Techno-Basque"
+            />
+            <!-- Carte affichant la date de l'événement -->
+            <div class="event-date-card">
+              <span class="day">15</span><span class="month"> janv.</span>
+            </div>
+          </div>
+
+          <!-- Corps de la carte de l'événement -->
+          <div class="article-card-body event-card-body">
+            <!-- Titre de l'événement -->
+            <h2 class="article-title event-title">Salon Techno-Basque 2024</h2>
+
+            <!-- Informations détaillées de l'événement -->
+            <div class="event-info">
+              <div class="event-place">
+                <p class="event-info-name bold">Lieu :</p>
+                <p>Halle d'Iraty, Biarritz</p>
+              </div>
+              <div class="event-date">
+                <p class="event-info-name bold">Date :</p>
+                <p>
+                  15 janvier 2024 <br />
+                  09h00 - 18h00
+                </p>
+              </div>
+              <div class="event-organizer">
+                <p class="event-info-name bold">Organisé par :</p>
+                <p>ESTIA &amp; French Tech Pays Basque</p>
+              </div>
+              <div class="event-type">
+                <p class="event-info-name bold">Type :</p>
+                <p>Salon &amp; Conférences</p>
+              </div>
+            </div>
+
+            <!-- Brève description de l'événement -->
+            <h2 class="event-description">
+              Découvrez les dernières innovations technologiques des start-ups
+              locales et participez aux conférences sur l'IA, la robotique et
+              l'économie numérique.
+            </h2>
+
+            <!-- Bouton pour en savoir plus -->
+            <div class="btn-container">
+              <a
+                href="#"
+                class="read-more-btn btn-primary"
+                title="Aller vers la page d'organisateur"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte d'événement : Hackathon Numérique -->
+        <article class="article-card event-card">
+          <div class="image-and-date">
+            <!-- Image représentative de l'événement -->
+            <img
+              src="../assets/img/event-2.webp"
+              alt="Participants au Hackathon dans une salle de coworking"
+            />
+            <!-- Carte affichant la date de l'événement -->
+            <div class="event-date-card">
+              <span class="day">20</span><span class="month"> fév.</span>
+            </div>
+          </div>
+
+          <!-- Corps de la carte de l'événement -->
+          <div class="article-card-body event-card-body">
+            <!-- Titre de l'événement -->
+            <h2 class="article-title event-title">
+              Hackathon Numérique Pays Basque
+            </h2>
+
+            <!-- Informations détaillées de l'événement -->
+            <div class="event-info">
+              <div class="event-place">
+                <p class="event-info-name bold">Lieu :</p>
+                <p>La Fabrique, Bayonne</p>
+              </div>
+              <div class="event-date">
+                <p class="event-info-name bold">Date :</p>
+                <p>
+                  20 - 22 février 2024 <br />
+                  08h00 - 20h00
+                </p>
+              </div>
+              <div class="event-organizer">
+                <p class="event-info-name bold">Organisé par :</p>
+                <p>Simplon Pays Basque</p>
+              </div>
+              <div class="event-type">
+                <p class="event-info-name bold">Type :</p>
+                <p>Hackathon</p>
+              </div>
+            </div>
+
+            <!-- Brève description de l'événement -->
+            <h2 class="event-description">
+              Participez au plus grand hackathon régional dédié aux solutions
+              numériques pour les entreprises et collectivités du Pays Basque.
+              Prix à gagner pour les meilleures équipes !
+            </h2>
+
+            <!-- Bouton pour en savoir plus -->
+            <div class="btn-container">
+              <a
+                href="#"
+                class="read-more-btn btn-primary"
+                title="Aller vers la page d'organisateur"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte d'événement : Conférence IoT -->
+        <article class="article-card event-card">
+          <div class="image-and-date">
+            <!-- Image représentative de l'événement -->
+            <img
+              src="../assets/img/event-3.webp"
+              alt="Conférence sur l'Internet des Objets et la ville connectée"
+            />
+            <!-- Carte affichant la date de l'événement -->
+            <div class="event-date-card">
+              <span class="day">5</span><span class="month"> mars</span>
+            </div>
+          </div>
+
+          <!-- Corps de la carte de l'événement -->
+          <div class="article-card-body event-card-body">
+            <!-- Titre de l'événement -->
+            <h2 class="article-title event-title">
+              Conférence IoT &amp; Ville Connectée
+            </h2>
+
+            <!-- Informations détaillées de l'événement -->
+            <div class="event-info">
+              <div class="event-place">
+                <p class="event-info-name bold">Lieu :</p>
+                <p>ESTIA, Bidart</p>
+              </div>
+              <div class="event-date">
+                <p class="event-info-name bold">Date :</p>
+                <p>5 mars 2024 / 10h00 - 17h00</p>
+              </div>
+              <div class="event-organizer">
+                <p class="event-info-name bold">Organisé par :</p>
+                <p>ESTIA</p>
+              </div>
+              <div class="event-type">
+                <p class="event-info-name bold">Type :</p>
+                <p>Conférence</p>
+              </div>
+            </div>
+
+            <!-- Brève description de l'événement -->
+            <h2 class="event-description">
+              Une journée d'échanges autour des technologies IoT et des
+              solutions pour créer des villes connectées, durables et
+              innovantes.
+            </h2>
+
+            <!-- Bouton pour en savoir plus -->
+            <div class="btn-container">
+              <a
+                href="#"
+                class="read-more-btn btn-primary"
+                title="Aller vers la page d'organisateur"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte d'événement : Atelier Tech4Good -->
+        <article class="article-card event-card">
+          <div class="image-and-date">
+            <!-- Image représentative de l'événement -->
+            <img
+              src="../assets/img/event-4.webp"
+              alt="Présentation sur l'impact du numérique pour l'inclusion sociale"
+            />
+            <!-- Carte affichant la date de l'événement -->
+            <div class="event-date-card">
+              <span class="day">18</span><span class="month"> avr.</span>
+            </div>
+          </div>
+
+          <!-- Corps de la carte de l'événement -->
+          <div class="article-card-body event-card-body">
+            <!-- Titre de l'événement -->
+            <h2 class="article-title event-title">
+              Atelier Tech4Good - Solutions Numériques pour l'Inclusion
+            </h2>
+
+            <!-- Informations détaillées de l'événement -->
+            <div class="event-info">
+              <div class="event-place">
+                <p class="event-info-name bold">Lieu :</p>
+                <p>Maison de l'Économie, Anglet</p>
+              </div>
+              <div class="event-date">
+                <p class="event-info-name bold">Date :</p>
+                <p>18 avril 2024 / 14h00 - 18h00</p>
+              </div>
+              <div class="event-organizer">
+                <p class="event-info-name bold">Organisé par :</p>
+                <p>Tech4Good France</p>
+              </div>
+              <div class="event-type">
+                <p class="event-info-name bold">Type :</p>
+                <p>Atelier &amp; Networking</p>
+              </div>
+            </div>
+
+            <!-- Brève description de l'événement -->
+            <h2 class="event-description">
+              Rejoignez-nous pour un atelier collaboratif visant à trouver des
+              solutions numériques pour promouvoir l'inclusion sociale dans la
+              région basque.
+            </h2>
+
+            <!-- Bouton pour en savoir plus -->
+            <div class="btn-container">
+              <a
+                href="#"
+                class="read-more-btn btn-primary"
+                title="Aller vers la page d'organisateur"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer>
+      <!-- Logo dans le pied de page -->
+      <div class="logo uppercase text-center">
+        <a
+          href="../index.html"
+          aria-label="Lien vers la page principale"
+          class="nav-link text-primary"
+          >Branché</a
+        >
+      </div>
+
+      <!-- Section "À propos" du site -->
+      <div class="about">
+        <p class="footer-primary text-center">
+          Branché est un magazine numérique dédié à l'univers de la technologie,
+          offrant des articles sur les dernières innovations, des analyses
+          approfondies et une couverture des événements tech locaux. Grâce à un
+          design moderne et une navigation interactive, Branché vous permet de
+          rester informé des tendances numériques et de découvrir ce qui façonne
+          le monde de demain.
+        </p>
+      </div>
+
+      <!-- Liens légaux -->
+      <div class="legal-links">
+        <a href="#" class="nav-link footer-secondary">Mentions légales</a>
+        <a href="#" class="nav-link footer-secondary"
+          >Politique de confidentialité</a
+        >
+        <a href="#" class="nav-link footer-secondary"
+          >Conditions Générales d'Utilisation</a
+        >
+        <a href="#" class="nav-link footer-secondary">Politique des cookies</a>
+        <a href="#" class="nav-link footer-secondary">Droits d'auteur</a>
+        <a href="#" class="nav-link footer-secondary">Contact</a>
+      </div>
+
+      <!-- Liens vers les réseaux sociaux -->
+      <div class="footer-social-media footer-secondary">
+        <a href="#" class="nav-link" aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="Twitter ou X"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="YouTube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p class="text-secondary text-center">
+          © 2024 Branché Tous droits réservés.
+        </p>
+      </div>
+
+      <!-- Informations sur le designer -->
+      <div class="design-author text-center">
+        <p class="text-secondary">Design réalisé par</p>
+        <p class="text-secondary">Armen ASRIYAN</p>
+        <div class="footer-social-media footer-secondary design-author-links">
+          <a
+            href="https://www.linkedin.com/in/armen-asriyan/"
+            class="nav-link"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/armen-asriyan"
+            class="nav-link"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="mailto:armenasriyan@proton.me"
+            class="nav-link"
+            aria-label="E-mail"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script JavaScript pour les interactions de la page -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

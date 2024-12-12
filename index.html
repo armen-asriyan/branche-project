@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Configuration des métadonnées de base pour la page web -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Balises SEO pour améliorer le référencement et la visibilité -->
+    <meta
+      name="description"
+      content="Branché est un magazine technologique interactif qui vous informe des dernières tendances technologiques et des événements locaux. Restez à jour avec des articles de qualité et des événements à ne pas manquer."
+    />
+    <meta
+      name="keywords"
+      content="magazine technologique, actualités tech, événements tech, innovation, technologie, articles tech, événement tech, tendances numériques"
+    />
+
+    <!-- Configuration des favicons pour différents supports et navigateurs -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+
+    <!-- Préchargement et importation des polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importation des icônes Font Awesome via un CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Feuille de style personnalisée pour le design du site -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Titre de la page, optimisé pour le SEO -->
+    <title>Google déploie Veo et Imagen 3 | Branché</title>
+  </head>
+  <body>
+    <!-- En-tête de la page avec navigation principale -->
+    <header>
+      <nav id="navbar">
+        <!-- Conteneur interne de la barre de navigation -->
+        <div class="nav-inner">
+          <!-- Logo du site avec lien vers la page d'accueil -->
+          <div class="logo uppercase">
+            <a
+              href="../index.html"
+              aria-label="Lien vers la page principale"
+              class="nav-link"
+              >Branché</a
+            >
+          </div>
+
+          <!-- Navigation pour les écrans larges -->
+          <div id="navbar-lg">
+            <a href="./index.html" class="nav-link">Accueil</a>
+            <a href="./templates/events.html" class="nav-link">Evénements</a>
+          </div>
+
+          <!-- Bouton hamburger pour menu mobile -->
+          <div class="hamburger-menu">
+            <a
+              href="#"
+              class="nav-link"
+              id="hamburger-menu-btn"
+              aria-label="Ouvrir le menu mobile"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Menu latéral (sidebar) pour mobile -->
+        <div id="sidebar-menu">
+          <!-- Navigation dans le menu latéral -->
+          <div class="sidebar-menu-nav">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="./templates/events.html" class="nav-link">Evénements</a>
+          </div>
+
+          <!-- Liens vers les réseaux sociaux dans le menu latéral -->
+          <div class="sidebar-social-media">
+            <a href="#" class="nav-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="Twitter ou X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="nav-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Section Title -->
+      <div class="section-title-container">
+        <h1 class="section-title">Dernières tendances tech</h1>
+      </div>
+
+      <!-- Articles Section -->
+      <div class="articles-section">
+        <!-- Article 1 -->
+        <a href="./templates/article-1.html" class="clickable-article">
+          <article class="article-card">
+            <img
+              src="./assets/img/article-1.webp"
+              alt="Capture d'écran de Google Veo avec des exemples de vidéos générées par l'IA"
+            />
+            <p class="article-author">Émilie Dupont</p>
+            <div class="article-card-body">
+              <h2 class="article-title">
+                Google déploie son générateur de vidéos Veo sur la plateforme
+                cloud Vertex AI.
+              </h2>
+              <p class="article-description">
+                Google a annoncé mardi le déploiement de deux de ses derniers
+                modèles d'IA générative, Imagen 3 et Veo, sur Vertex AI, sa
+                plateforme cloud de machine learning et d'orchestration de
+                grands modèles dédiée aux entreprises. L'information, révélée
+                mardi à l'occasion du Google Cloud Summit, n'a qu'une portée
+                limitée, dans la mesure où la disponibilité est limitée à
+                quelques clients grands comptes, sélectionnés pour une phase
+                d'accès anticipée.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="./templates/article-2.html" class="clickable-article">
+          <article class="article-card">
+            <img src="./assets/img/article-2.webp" alt="Logo de Kaspersky" />
+            <p class="article-author">Thomas Girard</p>
+            <div class="article-card-body">
+              <h2 class="article-title">
+                Kaspersky peut-il protéger notre vie numérique ?
+              </h2>
+              <p class="article-description">
+                Kaspersky est une entreprise spécialisée dans la cybersécurité.
+                Utilisées partout dans le monde, même si certains pays s’en
+                éloignent, ses solutions restent visiblement particulièrement
+                efficaces. Les faits et sa transparence prouvent toujours que
+                l’entreprise reste l’un des leaders de son secteur. Futura fait
+                le point sur les atouts de la firme.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <!-- Article 3 -->
+        <a href="./templates/article-3.html" class="clickable-article">
+          <article class="article-card">
+            <img
+              src="./assets/img/article-3.webp"
+              alt="Photo d'une personne tenant l'Oppo Find X8 Pro"
+            />
+            <p class="article-author">Sophie Bernard</p>
+            <div class="article-card-body">
+              <h2 class="article-title">
+                Oppo s'attaque au marché des smartphones haut de gamme avec le
+                Find X8 Pro
+              </h2>
+              <p class="article-description">
+                Après un an d’absence, Oppo signe son retour sur le marché des
+                smartphones haut de gamme en France avec le Find X8 Pro. Le
+                constructeur met en avant la caméra et l’intelligence
+                artificielle.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <!-- Article 4 -->
+        <a href="./templates/article-4.html" class="clickable-article">
+          <article class="article-card">
+            <img
+              src="./assets/img/article-4.webp"
+              alt="Capture d'écran de Dia, le nouveau navigateur"
+            />
+            <p class="article-author">Julien Lefèvre</p>
+            <div class="article-card-body">
+              <h2 class="article-title">
+                Entrez dans une nouvelle dimension : cette start-up réinvente le
+                navigateur web
+              </h2>
+              <p class="article-description">
+                Dia, le nouveau navigateur, dopé à l'intelligence artificielle,
+                agit comme un assistant multifonctionnel pour automatiser toutes
+                sortes de tâches et de recherches, simplifier la navigation,
+                permettre la gestion de documents via le langage naturel.
+                L'actuelle campagne de recrutement devrait accélérer le
+                lancement prévu pour 2025 et concurrencer les initiatives
+                similaires, comme celles d'OpenAI.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <!-- Pagination Controls -->
+        <div id="pagination-controls">
+          <div id="pagination-numbers"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer>
+      <!-- Logo dans le pied de page -->
+      <div class="logo uppercase text-center">
+        <a
+          href="./index.html"
+          aria-label="Lien vers la page principale"
+          class="nav-link text-primary"
+          >Branché</a
+        >
+      </div>
+
+      <!-- Section "À propos" du site -->
+      <div class="about">
+        <p class="footer-primary text-center">
+          Branché est un magazine numérique dédié à l'univers de la technologie,
+          offrant des articles sur les dernières innovations, des analyses
+          approfondies et une couverture des événements tech locaux. Grâce à un
+          design moderne et une navigation interactive, Branché vous permet de
+          rester informé des tendances numériques et de découvrir ce qui façonne
+          le monde de demain.
+        </p>
+      </div>
+
+      <!-- Liens légaux -->
+      <div class="legal-links">
+        <a href="#" class="nav-link footer-secondary">Mentions légales</a>
+        <a href="#" class="nav-link footer-secondary"
+          >Politique de confidentialité</a
+        >
+        <a href="#" class="nav-link footer-secondary"
+          >Conditions Générales d'Utilisation</a
+        >
+        <a href="#" class="nav-link footer-secondary">Politique des cookies</a>
+        <a href="#" class="nav-link footer-secondary">Droits d'auteur</a>
+        <a href="#" class="nav-link footer-secondary">Contact</a>
+      </div>
+
+      <!-- Liens vers les réseaux sociaux -->
+      <div class="footer-social-media footer-secondary">
+        <a href="#" class="nav-link" aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="Twitter ou X"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="YouTube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="#" class="nav-link" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p class="text-secondary text-center">
+          © 2024 Branché Tous droits réservés.
+        </p>
+      </div>
+
+      <!-- Informations sur le designer -->
+      <div class="design-author text-center">
+        <p class="text-secondary">Design réalisé par</p>
+        <p class="text-secondary">Armen ASRIYAN</p>
+        <div class="footer-social-media footer-secondary design-author-links">
+          <a
+            href="https://www.linkedin.com/in/armen-asriyan/"
+            class="nav-link"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/armen-asriyan"
+            class="nav-link"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="mailto:armenasriyan@proton.me"
+            class="nav-link"
+            aria-label="E-mail"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
