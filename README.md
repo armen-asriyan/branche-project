@@ -23,4 +23,4 @@
 
 ## Démo en ligne :
 
-Vous pouvez voir une démo en ligne du projet sur [GitHub Pages].
+Vous pouvez voir une démo en ligne du projet sur [GitHub Pages](https://armen-asriyan.github.io/branche-project).
